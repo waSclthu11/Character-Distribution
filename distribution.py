@@ -43,13 +43,12 @@ print('The distribution of characters in "{}" is: '.format(text))
 text=str(text)
 abc=([abc[i:i+1] for i in range(0, 26, 1)])#Splits alphabet into list
 print(abc)
-abc=str(abc)
 x=0
 letters=[]
 while(x<=25):
-    y=abc[x]
+    y=text.count(abc[x])
     letters.append(y)
     x=x+1
-
+print(letters)
 
 
