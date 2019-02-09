@@ -45,10 +45,11 @@ abc=([abc[i:i+1] for i in range(0, 26, 1)])#Splits alphabet into list
 print(abc)
 x=0
 letters=[]
-while(x<=25):
-    y=text.count(abc[x])
+while(x<=25): #Loop goes through all letters in alphabet and counts the number of each letter in entered text
+    y=text.count(abc[x]) 
     letters.append(y)
     x=x+1
 print(letters)
+
 
 
