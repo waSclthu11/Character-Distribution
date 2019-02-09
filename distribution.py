@@ -1,7 +1,7 @@
 """
 distribution.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: waSclthu11
+Credit: Assignment description
 
 Assignment:
 
@@ -36,3 +36,20 @@ Notice about this example:
   in the text and they are listed in the output in alphabetical order.
 * Letters that do not occur in the text are not listed in the output at all.
 """
+import string
+abc = string.ascii_lowercase
+text = input(str("Please enter a string of text (the bigger the better): "))
+print('The distribution of characters in "{}" is: '.format(text))
+text=str(text)
+abc=([abc[i:i+1] for i in range(0, 26, 1)])#Splits alphabet into list
+print(abc)
+abc=str(abc)
+x=0
+letters=[]
+while(x<=25):
+    y=abc[x]
+    letters.append(y)
+    x=x+1
+
+
+
