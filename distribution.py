@@ -49,13 +49,15 @@ while(x<=25): #Loop goes through all letters in alphabet and counts the number o
     letters.append(y)
     x=x+1
 print(letters)
+print(abc)
 x=0
 alph=[]
 while(x<=25):
-    for z in range(0,letters.count(abc[x])):
-        print(abc[x])
-        alph.append(abc[x])
-    alph.append("_")
+    for z in range(0,letters[x]):
+        if letters[x]>0:
+            print(abc[x])
+            alph.append(abc[x])
+    alph.append(" ")
     x=x+1
 print(alph)
 def compare(a, b):
