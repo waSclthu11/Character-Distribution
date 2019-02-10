@@ -59,9 +59,9 @@ while(x<=25):
     if letters[x]>0:
         alph.append(" ")
     x=x+1
-
-print(alph)
 alph= ''.join(alph)
+print(alph)
+alph=alph.split(" ")
 print(alph)
 def compare(a, b):
     """
