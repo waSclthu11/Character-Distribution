@@ -58,7 +58,7 @@ def bsort(seq, cmp):
                     sorted = False          # then the list is not sorted yet
                     seq[index-1], seq[index] = seq[index], seq[index-1] # and swap it
 
-
+import string
 abc = string.ascii_lowercase
 text = input(str("Please enter a string of text (the bigger the better): "))
 print('The distribution of characters in "{}" is: '.format(text))
