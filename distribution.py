@@ -63,7 +63,8 @@ alph= ''.join(alph)
 print(alph)
 alph=alph.split(" ")
 print(alph)
-print(len(alph[2]))
+
+
 def compare(a, b):
     """
     compare - generic comparison function for testing two elements.
