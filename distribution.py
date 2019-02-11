@@ -88,8 +88,8 @@ print(alph)
 alph= alph.pop(-1)
 print(len(alph))
 x=0
-while(x<=len(alph)):
-    print()
+#while(x<=len(alph)):
+
 
     
 tosort = [4, 10, 3, -1000, 30]
