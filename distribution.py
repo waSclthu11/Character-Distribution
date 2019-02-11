@@ -82,7 +82,7 @@ def bsort(lst, cmp):
         sorted = True   # assume it's already sorted correctly
         for index in enumerate(lst): # for every element in seq
             if index > 0:                   # past the first..
-                if not cmp((len(lst[index-1])), len(list[index])):  # if this element is out of order
+                if not (len(lst[index-1])) < (len(list[index])):  # if this element is out of order
                     print(len(lst[index-1]))
                     sorted = False          # then the list is not sorted yet
                     lst[index-1], lst[index] = lst[index], lst[index-1] # and swap it
