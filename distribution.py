@@ -66,14 +66,14 @@ print(alph)
 
 
 
-sorted = 0  # assume the lst is not sorted to start with
-while sorted = 0:
-    sorted = 1   # assume it's already sorted correctly
+s = 0  # assume the lst is not sorted to start with
+while s = 0:
+    s = 1   # assume it's already sorted correctly
     for index in enumerate(alph): # for every element in seq
         if index > 0:                   # past the first..
                 if not (len(alph[index-1])) < (len(alph[index])):  # if this element is out of order
                     print(len(alph[index-1]))
-                    sorted = 0          # then the list is not sorted yet
+                    s = 0          # then the list is not sorted yet
                     alph[index-1], alph[index] = alph[index], alph[index-1] # and swap it
 print(alph)
 
