@@ -92,7 +92,11 @@ print(y)
 x=0
 while(x==0):
     x=1
-    for i in range(0,
+    for i in range(0,y):
+        if i > 0:
+            if alph[i-1] > alph[i]:
+                x=0
+                
 """while(x==0):
     x=1
     for index in range(0,(int(len(alph))-1)):
