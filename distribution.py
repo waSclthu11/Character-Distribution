@@ -65,30 +65,15 @@ alph=alph.split(" ")
 print(alph)
 
 
-def compare(a, b):
-    """
-    compare - generic comparison function for testing two elements.
-    """
-    return b > a
 
+sorted = 0  # assume the lst is not sorted to start with
+while sorted = 0:
+    sorted = 1   # assume it's already sorted correctly
+    for index in enumerate(alph): # for every element in seq
+        if index > 0:                   # past the first..
+                if not (len(alph[index-1])) < (len(alph[index])):  # if this element is out of order
+                    print(len(alph[index-1]))
+                    sorted = 0          # then the list is not sorted yet
+                    alph[index-1], alph[index] = alph[index], alph[index-1] # and swap it
+print(alph)
 
-def bsort(lst, cmp):
-    """
-    bsort - simple sorting algorithm that uses any comparison function
-    seq - a list to be sorted
-    cmp - a function for comparing two elements of seq
-    """
-    sorted = False  # assume the lst is not sorted to start with
-    while not sorted:
-        sorted = True   # assume it's already sorted correctly
-        for index in enumerate(lst): # for every element in seq
-            if index > 0:                   # past the first..
-                if not (len(lst[index-1])) < (len(list[index])):  # if this element is out of order
-                    print(len(lst[index-1]))
-                    sorted = False          # then the list is not sorted yet
-                    lst[index-1], lst[index] = lst[index], lst[index-1] # and swap it
-
-    
-tosort = alph
-bsort(tosort, compare)
-print(tosort)
