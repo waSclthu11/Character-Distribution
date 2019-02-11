@@ -40,7 +40,7 @@ import string
 abc = string.ascii_lowercase
 text = input(str("Please enter a string of text (the bigger the better): "))
 print('The distribution of characters in "{}" is: '.format(text))
-text=str(text)
+text=str.lower(text)
 abc=([abc[w:w+1] for w in range(0, 26, 1)])#Splits alphabet into list
 x=0
 letters=[]
@@ -65,14 +65,29 @@ alph=alph.split(" ")
 print(alph)
 print(len(alph))
 
+def compare(a, b):
+    """
+    compare - generic comparison function for testing two elements.
+    """
+    return b > a
 
-s = 0  # assume the lst is not sorted to start with
-while s == 0:
-    s = 1   # assume it's already sorted correctly
-    for index in len(alph): # for every element in seq
-        if index > 0:                   # past the first..
-                if not (len(alph[index-1])) < (len(alph[index])):  # if this element is out of order
-                    s = 0          # then the list is not sorted yet
-                    alph[index-1], alph[index] = alph[index], alph[index-1] # and swap it
-print(alph)
 
+def bsort(seq, cmp):
+    """
+    bsort - simple sorting algorithm that uses any comparison function
+    seq - a list to be sorted
+    cmp - a function for comparing two elements of seq
+    """
+    sorted = False  # assume the seq is not sorted to start with
+    while not sorted:
+        sorted = True   # assume it's already sorted correctly
+        for index, value in enumerate(seq): # for every element in seq
+            if index > 0:                   # past the first..
+                if not cmp(seq[index-1], value):  # if this element is out of order
+                    sorted = False          # then the list is not sorted yet
+                    seq[index-1], seq[index] = seq[index], seq[index-1] # and swap it
+
+    
+tosort = [4, 10, 3, -1000, 30]
+bsort(tosort, compare)
+print(tosort)
