@@ -44,20 +44,19 @@ def compare(a, b):
     return b > a
 
 
-def bsort(seq, cmp):
+def bsort, cmp):
     """
-    bsort - simple sorting algorithm that uses any comparison function
-    seq - a list to be sorted
-    cmp - a function for comparing two elements of seq
+    bsort - simple sorting algorithm that uses any comparison function - a list to be sorted
+    cmp - a function for comparing two elements o
     """
-    sorted = False  # assume the seq is not sorted to start with
+    sorted = False  # assume th is not sorted to start with
     while not sorted:
         sorted = True   # assume it's already sorted correctly
-        for index, value in enumerate(seq): # for every element in seq
+        for index, value in enumerat): # for every element i
             if index > 0:                   # past the first..
-                if not cmp(seq[index-1], value):  # if this element is out of order
+                if not cm[index-1], value):  # if this element is out of order
                     sorted = False          # then the list is not sorted yet
-                    seq[index-1], seq[index] = seq[index], seq[index-1] # and swap it
+            [index-1][index] [index][index-1] # and swap it
 
 abc = string.ascii_lowercase
 text = input(str("Please enter a string of text (the bigger the better): "))
@@ -88,9 +87,13 @@ alph.pop(-1)
 print(alph)
 print(len(alph))
 x=0
-#while(x<=len(alph)):
-    #"yeeted"
-    
+while(x==0):
+    x=1
+    for index in range(0,(len(alph))-1)
+        if index > 0:                  
+           if not cmp(alph[index-1], value):  
+                    x=0
+            [index-1][index] [index][index-1]
 
 
     
