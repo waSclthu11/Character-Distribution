@@ -80,7 +80,7 @@ def bsort(lst, cmp):
     sorted = False  # assume the lst is not sorted to start with
     while not sorted:
         sorted = True   # assume it's already sorted correctly
-        for index, value in enumerate(lst): # for every element in seq
+        for index in enumerate(lst): # for every element in seq
             if index > 0:                   # past the first..
                 if not cmp((len(lst[index-1])), len(list[index])):  # if this element is out of order
                     print(len(lst[index-1]))
