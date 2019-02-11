@@ -90,12 +90,12 @@ print(len(alph))
 x=0
 while(x==0):
     x=1
-    for index in range(0,(len(alph))-1)
+    for index in range(0,(int(len(alph))-1)):
         if index > 0:                  
            if not cmp(alph[index-1], alph[index]):  
                 x=0
                 alph[index-1], alph[index] = alph[index], alph[index-1]
-
+print(alph)
     
 tosort = [4, 10, 3, -1000, 30]
 bsort(tosort, compare)
