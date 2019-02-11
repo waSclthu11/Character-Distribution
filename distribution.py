@@ -84,7 +84,7 @@ while(x<=25):
 alph= ''.join(alph)
 print(alph)
 alph= alph.split(" ")
-alph.pop(1)
+alph.pop(-1)
 print(alph)
 print(len(alph))
 x=0
