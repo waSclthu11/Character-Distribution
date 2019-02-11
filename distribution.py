@@ -36,7 +36,6 @@ Notice about this example:
   in the text and they are listed in the output in alphabetical order.
 * Letters that do not occur in the text are not listed in the output at all.
 """
-import string
 def compare(a, b):
     """
     compare - generic comparison function for testing two elements.
@@ -44,19 +43,21 @@ def compare(a, b):
     return b > a
 
 
-def bsort, cmp):
+def bsort(seq, cmp):
     """
-    bsort - simple sorting algorithm that uses any comparison function - a list to be sorted
-    cmp - a function for comparing two elements o
+    bsort - simple sorting algorithm that uses any comparison function
+    seq - a list to be sorted
+    cmp - a function for comparing two elements of seq
     """
-    sorted = False  # assume th is not sorted to start with
+    sorted = False  # assume the seq is not sorted to start with
     while not sorted:
         sorted = True   # assume it's already sorted correctly
-        for index, value in enumerat): # for every element i
+        for index, value in enumerate(seq): # for every element in seq
             if index > 0:                   # past the first..
-                if not cm[index-1], value):  # if this element is out of order
+                if not cmp(seq[index-1], value):  # if this element is out of order
                     sorted = False          # then the list is not sorted yet
-            [index-1][index] [index][index-1] # and swap it
+                    seq[index-1], seq[index] = seq[index], seq[index-1] # and swap it
+
 
 abc = string.ascii_lowercase
 text = input(str("Please enter a string of text (the bigger the better): "))
@@ -91,10 +92,9 @@ while(x==0):
     x=1
     for index in range(0,(len(alph))-1)
         if index > 0:                  
-           if not cmp(alph[index-1], value):  
-                    x=0
-            [index-1][index] [index][index-1]
-
+           if not cmp(alph[index-1], alph[index]):  
+                x=0
+                alph[index-1], alph[index] = alph[index], alph[index-1]
 
     
 tosort = [4, 10, 3, -1000, 30]
