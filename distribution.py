@@ -1,7 +1,7 @@
 """
 distribution.py
 Author: waSclthu11
-Credit: Assignment description
+Credit: Assignment description And I also used 
 
 Assignment:
 
