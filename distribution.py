@@ -99,7 +99,7 @@ while(x==0):
                 alph[i-1], alph[i] = alph[i], alph[i-1]
 alphf=[]
 print(alph)
-for x in range(1,(len(alph)-1)):
+for x in range(1,(len(alph)+1)):
     print(alph[-x])
 
 
