@@ -94,7 +94,7 @@ while(x==0):
     x=1
     for i in range(0,y):
         if i > 0:
-            if alph[i-1] > alph[i]:
+            if len(alph[i-1]) > len(alph[i]):
                 x=0
                 alph[i-1], alph[i] = alph[i], alph[i-1]
 print(alph)
