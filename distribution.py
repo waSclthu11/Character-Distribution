@@ -70,7 +70,7 @@ while(x<=25): #Loop goes through all letters in alphabet and counts the number o
     y=text.count(abc[x]) 
     letters.append(y)
     x=x+1
-print(letters)
+
 
 x=0
 alph=[]
@@ -82,12 +82,12 @@ while(x<=25):
         alph.append(" ")
     x=x+1
 alph= ''.join(alph)
-print(alph)
+
 alph= alph.split(" ")
 alph.pop(-1)
-print(alph)
+
 y=len(alph)
-print(y)
+
 
 x=0
 while(x==0):
@@ -98,7 +98,7 @@ while(x==0):
                 x=0
                 alph[i-1], alph[i] = alph[i], alph[i-1]
 alphf=[]
-print(alph)
+
 for x in range(1,(len(alph)+1)):
     print(alph[-x])
 
