@@ -97,7 +97,10 @@ while(x==0):
             if len(alph[i-1]) > len(alph[i]):
                 x=0
                 alph[i-1], alph[i] = alph[i], alph[i-1]
+alphf=[]
 print(alph)
-alph=alph.reverse()
-print(alph)
+for x in range(1,(len(alph)-1)):
+    print(alph[-x])
+
+
 
