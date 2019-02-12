@@ -98,5 +98,6 @@ while(x==0):
                 x=0
                 alph[i-1], alph[i] = alph[i], alph[i-1]
 print(alph)
-
+alph=alph.reverse()
+print(alph)
 
