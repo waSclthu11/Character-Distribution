@@ -1,7 +1,7 @@
 """
 distribution.py
 Author: waSclthu11
-Credit: Assignment description And I also used 
+Credit: Assignment description And I also used the internet for some stuff, like the reverse and pop list methods, and also for converting the alphabet to a list.
 
 Assignment:
 
