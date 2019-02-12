@@ -87,7 +87,7 @@ alph= alph.split(" ")
 alph.pop(-1)
 
 y=len(alph)
-
+alph.reverse()
 
 x=0
 while(x==0):
