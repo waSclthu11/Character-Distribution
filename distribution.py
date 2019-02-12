@@ -98,15 +98,5 @@ while(x==0):
                 x=0
                 alph[i-1], alph[i] = alph[i], alph[i-1]
 print(alph)
-"""while(x==0):
-    x=1
-    for index in range(0,(int(len(alph))-1)):
-        if index > 0:                  
-           if not (alph[index-1] < alph[index]):  
-                x=0
-                alph[index-1], alph[index] = alph[index], alph[index-1]
-"""
 
-tosort = [4, 10, 3, -1000, 30]
-bsort(tosort, compare)
-print(tosort)
+
